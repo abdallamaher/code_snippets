@@ -7,8 +7,11 @@ int n, ok;
 vector<int> v;
 
 int solve(int i, int p, int S1, int S2){
-    if(S1 == S2) return 0;
-    if(i == n) return dp[i][p][abs(S1-S2)] = 1;
+    if(ok) return 0;
+    if(i == n) {
+        ok = 1;
+        return dp[i][p][abs(S1-S2)] = 1;
+    }
     if(dp[i][p][abs(S1-S2)]) return dp[i][p][abs(S1-S2)];
     bool ans = 0;
     for(int j=0; j<v.size(); ++j){
@@ -22,14 +25,12 @@ int solve(int i, int p, int S1, int S2){
 }
 
 void dfs(int i, int p, int S1, int S2){
-    if(i == n) ok=1;
-    if(ok) return ;
     for(int j=0; j<v.size(); j++){
-        if(i%2==0 && dp[i+1][v[j]][abs(S1+v[j]-S2)] && !ok && v[j]!=p && S1+v[j]>S2){
+        if(i%2==0 && dp[i+1][v[j]][abs(S1+v[j]-S2)]){
             printf("%d ", v[j]);
             dfs(i+1, v[j], S1+v[j], S2);
         }
-        if(i%2 && dp[i+1][v[j]][abs(S1-S2-v[j])] && !ok && v[j]!=p && S1<v[j]+S2){
+        if(i%2 && dp[i+1][v[j]][abs(S1-S2-v[j])]){
             printf("%d ", v[j]);
             dfs(i+1, v[j], S1, S2+v[j]);
         }
