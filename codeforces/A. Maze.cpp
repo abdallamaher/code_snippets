@@ -12,7 +12,7 @@ bool ok(int r, int c){
     return r<n && c<m && r>=0 && c>=0 && g[r][c]=='.' && !vis[r][c];
 }
  
-void dfs(int r, int c){ //DFS topological Order
+void dfs(int r, int c){ 
     vis[r][c]++;
     for(int i=0; i<4; i++){
         int nr=r+dr[i], nc=c+dc[i];
