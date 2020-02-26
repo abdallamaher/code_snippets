@@ -1,0 +1,48 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+const int N = (int)1e7 + 5;
+int n, q, r, l, x;
+int ar[N];
+int vis[N];
+int prime[N];
+void seive() {
+	for (int i = 2; i < N; i++)
+		if (!vis[i]) {
+			for (int j = i; j < N; j += i)
+				prime[i] += ar[j], vis[j] = 1;
+		}
+}
+
+int main() {
+	cin.sync_with_stdio(false);
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		cin >> x; ar[x]++;
+	}
+	seive();
+	for (int i = 1; i < N; i++) {
+		prime[i] += prime[i - 1];
+	}
+	cin >> q;
+	while (q--) {
+		cin >> l >> r;
+		if (r > N) r = N - 1;
+		if (l > N) l = N - 1;
+		printf("%d\n", prime[r] - prime[l - 1]);
+	}
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
