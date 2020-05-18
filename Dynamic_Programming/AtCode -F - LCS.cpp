@@ -4,8 +4,39 @@ using namespace std;
 #define ll long long
 string ss, s;
 int dp[3003][3003];
-pair<int, int> vis[3003][3003];
 
+int Table() {
+    cin >> s >> ss;
+    int n = s.size(), m = ss.size();
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= m; j++) {
+            if (s[i - 1] == ss[j - 1]) {
+                dp[i][j] = dp[i - 1][j - 1] + 1;
+            }
+            else {
+                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
+            }
+        }
+    }
+    string ans = "";
+    int x = n, y = m;
+    while (y != 0 && x != 0) {
+        if (dp[x - 1][y] == dp[x][y])
+            --x;
+        else if (dp[x][y - 1] == dp[x][y])
+            --y;
+        else {
+            ans = ss[y - 1] + ans;
+            --x;
+            --y;
+        }
+    }
+    cout << ans;
+    return 0;
+}
+
+
+pair<int, int> vis[3003][3003];
 int solve(int i, int j) {
     if (i==s.size() || j == ss.size())return 0;
     if (~dp[i][j])return dp[i][j];
