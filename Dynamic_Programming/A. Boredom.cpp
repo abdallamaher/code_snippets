@@ -3,18 +3,18 @@
 using namespace std;
 #define ll long long
 const int N = 1e5 + 5;
-int n;
+int n, mx;
 vector<int> v;
 int cnt[N];
 ll dp[N];
-ll solve(int i=0) {
+ll solve(int i = 0) {
     if (i >= n)
         return 0;
     if (~dp[i])
         return dp[i];
     ll& a = dp[i];
     a = solve(i + 1);
-    if (v[i]==v[i+1]-1)
+    if (v[i] == v[i + 1] - 1)
         a = max(a, solve(i + 2) + 1ll * v[i] * cnt[v[i]]);
     else
         a = max(a, solve(i + 1) + 1ll * v[i] * cnt[v[i]]);
@@ -37,4 +37,22 @@ int main() {
     memset(dp, -1, sizeof(dp));
     cout << solve();
     return 0;
+}
+
+
+/*
+table
+*/
+void table() {
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        int x; cin >> x;
+        cnt[x]++;
+        mx = max(x, mx);
+    }
+    dp[1] = cnt[1];
+    for (int i = 2; i <= mx; i++) {
+        dp[i] = max(dp[i - 1], 1ll * i * cnt[i] + dp[i - 2]);
+    }
+    cout << dp[mx] << ' ';
 }
