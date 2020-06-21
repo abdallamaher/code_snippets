@@ -2,33 +2,32 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-const int mod = 1e9 + 7;
 int n, k;
-ll dp[2100][2100];
-
-ll solve(int i, int kk) {
-    if (i == n) {
-        return 1;
+const int N = 2e3 + 5,mod = 1e9 + 7;
+int dp[N][N];
+ 
+int solve(int i=0, int m=1) {
+    if (i == n)return 1;
+    int& ret = dp[i][m];
+    if (~ret)return ret;
+ 
+    ret = 0;
+    for (int j = 1; j*m <= k; j++) {
+        ret += solve(i + 1, j*m);
+        if (ret > mod)ret %= mod;
     }
-    ll& rem = dp[i][kk];
-    if (~rem)
-        return rem;
-    rem = 0;
-    for (int j = 1; j <= k/kk; j++) {
-        //printf("%d %d %d \n", i, j, k/kk);
-        rem += solve(i + 1, j * kk);
-        if (rem > mod) rem -= mod;
-    }
-    return rem;
+    return ret;
 }
+ 
 int main() {
     cin.sync_with_stdio(false);
     cin.tie(0); cout.tie(0);
     cin >> k >> n;
     memset(dp, -1, sizeof(dp));
-    cout << solve(0, 1);
+    cout << solve();
     return 0;
 }
+ 
 
 void Table() {
     int K, N;
