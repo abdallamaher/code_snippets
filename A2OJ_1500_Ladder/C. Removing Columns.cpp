@@ -11,18 +11,15 @@ int main() {
     vector<string> ar(n);
     for (int i = 0; i < n; i++) cin >> ar[i];
 
-    int change = 1;
-    while (change == 1) {
-        change = 0;
-        for (int i = 1; i < n; i++) {
-            for (int j = 0; j < ar[i - 1].length() && j < ar[i].length(); j++) {
-                if (removed[j])continue;
-                else if (ar[i - 1][j] < ar[i][j]) break;
-                else if (ar[i - 1][j] > ar[i][j]) {
-                    removed[j]++;
-                    ans++;
-                    change = 1;
-                }
+
+    for (int i = 1; i < n; i++) {
+        for (int j = 0; j < ar[i - 1].length() && j < ar[i].length(); j++) {
+            if (removed[j])continue;
+            else if (ar[i - 1][j] < ar[i][j]) break;
+            else if (ar[i - 1][j] > ar[i][j]) {
+                removed[j]++;
+                ans++;
+                i = 1; j = 0;
             }
         }
     }
