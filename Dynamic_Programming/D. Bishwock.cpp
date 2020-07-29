@@ -22,6 +22,26 @@ int solve(int i, int p) {
 	return ret;
 }
 
+int go();
+int main() {
+	cin.sync_with_stdio(false);
+	cin.tie(0); cout.tie(0);
+	cin >> a >> b;
+	for (auto&it : a) {
+		if (it == '0')it = 1;
+		else it = 0;
+	}
+	for (auto&it : b) {
+		if (it == '0')it = 1;
+		else it = 0;
+	}
+	memset(dp, -1, sizeof(dp));
+	cout << solve(0, 0) << '\n';
+	
+	return 0;
+	go();
+}
+
 int go() {
 	cin >> a >> b;
 	int ar[110] = { 0 };
@@ -48,22 +68,4 @@ int go() {
 	return 0;
 }
 
-int main() {
-	cin.sync_with_stdio(false);
-	cin.tie(0); cout.tie(0);
-	cin >> a >> b;
-	for (auto&it : a) {
-		if (it == '0')it = 1;
-		else it = 0;
-	}
-	for (auto&it : b) {
-		if (it == '0')it = 1;
-		else it = 0;
-	}
-	memset(dp, -1, sizeof(dp));
-	cout << solve(0, 0) << '\n';
-	
-	return 0;
-	go();
-}
 
