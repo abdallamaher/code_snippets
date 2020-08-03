@@ -29,7 +29,7 @@ int main() {
 			//cerr << i << "*********" << x << endl;
 		}
 	}
-	cout << (ll)pow(2, ans) << '\n';
+	cout << (1LL << ans) << '\n';
 	return 0;
 }
 
