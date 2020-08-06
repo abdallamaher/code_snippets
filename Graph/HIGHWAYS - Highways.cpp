@@ -1,52 +1,54 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-const int N = 1e6 + 5;
-const int mod = (int)1e9 + 7;
-
-int t, n, m, st, en, u, v, w;
+int q, n, m, st, en;
+const int N = 1e5 + 7;
+vector<pair<int, int>> adj[N];
 int dis[N];
-vector<pair<int, int>> adjList[N];
 
-void init(){
-    memset(dis, -1, sizeof dis);
-    for(int i=0; i<N; i++)
-        adjList[i].clear();
+void dij(int st) {
+	priority_queue<pair<ll, int>> q;
+	q.push({ 0, st });
+	dis[st] = 0;
+	while (q.size()) {
+		int u = q.top().second;
+		int d = -q.top().first;
+		q.pop();
+		for (auto it : adj[u]) {
+			int v = it.second;
+			int w = it.first;
+			if (dis[v]<0 || dis[v] > w + d) {
+				dis[v] = d + w;
+				q.push({ -dis[v], v });
+			}
+		}
+	}
 }
 
-void Dijkstra(){
-    dis[st] = 0;
-    priority_queue<pair<int, int>> q;
-    q.push({0, st});
-    while(q.size()){
-        int u = q.top().second;
-        int d = -q.top().first;
-        q.pop();
-        for(auto i: adjList[u]){
-            int v = i.second;
-            if(dis[v] == -1  || dis[v] > d + i.first){
-                dis[v] = d + i.first;
-                q.push({-dis[v], v});
-            }
-        }
-    }
+void init() {
+	memset(dis, -1, sizeof dis);
+	for(auto it: adj)
+		it.clear();
 }
+
 
 int main() {
-    cin >> t;
-    while(t--){
-        init();
-        cin >> n >> m >> st >> en;
-        for(int i=0; i<m; i++){
-            cin >> u >> v >> w;
-            adjList[u].push_back({w, v});
-            adjList[v].push_back({w, u});
-        }
-        Dijkstra();
-        if(~dis[en]) printf("%d\n", dis[en]);
-        else printf("NONE\n");
-    }
-    return 0;
+	cin.sync_with_stdio(false);
+	cin.tie(0); cout.tie(0);
+	cin >> q;
+	while (q--) {
+		init();
+		cin >> n >> m >> st >> en;
+		for (int i = 0; i < m; i++) {
+			int u, v, w;
+			cin >> u >> v >> w;
+			adj[u].push_back({ w, v });
+			adj[v].push_back({ w, u });
+		}
+		dij(st);
+		if (~dis[en]) printf("%d\n", dis[en]); 
+		else puts("NONE");
+	}
+	return 0;
 }
-
 
