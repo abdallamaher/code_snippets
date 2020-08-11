@@ -1,15 +1,28 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-int n, m, ans;
-vector<int> adj[110], lan[110];
+int n, m, zeros, comp;
+vector<int> adj[110];
+vector<int> lan[110];
 int vis[110];
 
 void dfs(int i) {
 	vis[i] = 1;
-	for (auto it : adj[i]) {
-		for (auto x : lan[it]) {
-			if (!vis[x])dfs(x);
+	for (auto it : adj[i])if (!vis[it])
+		dfs(it);
+}
+
+
+inline void bfs(int i) {
+	queue<int> q;
+	q.push(i);
+	vis[i] = 1;
+	while (q.size()) {
+		int u = q.front();
+		q.pop();
+		for (auto it : adj[u])if (!vis[it]) {
+			q.push(it);
+			vis[it] = 1;
 		}
 	}
 }
@@ -20,22 +33,24 @@ int main() {
 	cin >> n >> m;
 	for (int i = 0; i < n; i++) {
 		int x; cin >> x;
-		if (!x)ans++;
-		for (int j = 0; j < x; j++) {
+		if (x == 0) zeros++;
+		while (x--) {
 			int l; cin >> l;
-			adj[i].push_back(l);
+			for (auto it : lan[l]) {
+				adj[i].push_back(it);
+				adj[it].push_back(i);
+			}
 			lan[l].push_back(i);
 		}
 	}
-	if (ans == n)return cout << n, 0;
-	ans = 0;
+	if (zeros == n)return cout << n, 0;
 	for (int i = 0; i < n; i++) {
 		if (!vis[i]) {
-			ans++;
-			dfs(i);
+			comp++;
+			bfs(i);
 		}
 	}
-	cout << ans - 1 << '\n';
+	cout << comp - 1;
 	return 0;
 }
 
