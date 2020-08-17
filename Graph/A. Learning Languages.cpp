@@ -1,6 +1,65 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
+int n, m, comp, zeros;
+const int N = 1e2 + 5;
+vector<int>adj[N], lan[N];
+int p[N] = { -1 };
+
+int find_parent(int n) {
+	vector<int> v;
+	while (p[n] > 0) {
+		v.push_back(n);
+		n = p[n];
+	}
+	for (int i = 0; i < v.size(); i++)p[v[i]] = n;
+	return n;
+}
+
+void Union(int u, int v) {
+	u = find_parent(u);
+	v = find_parent(v);
+	if (u == v)return;
+	p[u] += p[v];
+	p[v] = u;
+	comp--;
+}
+
+int main() {
+#ifdef LOCAL
+	freopen("input.txt", "r", stdin);
+#endif
+	scanf("%d %d", &n, &m);
+	comp = n;
+	for(int i=1; i<=n; i++) {
+		int x; scanf("%d", &x);
+		if (!x)zeros++;
+		while (x--) {
+			int l;  scanf("%d", &l);
+			for(auto it: lan[l])Union(i, it);
+			lan[l].push_back(i);
+		}
+	}
+	if (zeros == n)return printf("%d\n", n), 0;
+	printf("%d\n", comp-1);
+	return 0;
+}
+
+
+
+
+
+
+
+////////////////////////////////////////////////////
+
+
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
 int n, m, zeros, comp;
 vector<int> adj[110];
 vector<int> lan[110];
