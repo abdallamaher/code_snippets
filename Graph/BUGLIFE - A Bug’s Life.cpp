@@ -1,53 +1,67 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-const int N = 1e6 + 5;
-const int mod = (int)1e9 + 7;
+int T, n, m;
+const int N = 2e3 + 5;
+vector<int> adj[N];
+int vis[N], col[N];
 
-int n, m, t, u, v;
-vector<int> adjList[N];
-int vis[N];
-
-void init(){
-    memset(vis, -1, sizeof vis);
-    memset(adjList, 0, sizeof adjList);
+void init() {
+	for (int i = 0; i <= n; i++)vis[i] = 0, col[i] = 0;
+	for (auto& it : adj)it.clear();
 }
 
-bool Bfs(int u){
-    vis[u] = 1;
-    queue<int> q;
-    q.push(u);
-    while(q.size()){
-        u = q.front();
-        q.pop();
-        for(auto i: adjList[u]){
-            if(~vis[i] && vis[u] != vis[i]) continue;
-            if(~vis[i] && vis[u] == vis[i]) return 1;
-            vis[i] = !vis[u];
-            q.push(i);
-        }
-    }
-    return 0;
+int dfs(int i, int c) {
+	vis[i] = 1;
+	col[i] = c;
+	int ret = 0;
+	for (auto it : adj[i]) {
+		if (!vis[it]) ret += dfs(it, c ^ 1);
+		else if (col[it] == c)return 1;
+	}
+	return ret;
+}
+
+
+int bfs(int i) {
+	queue<pair<int,int>> q;
+	q.push({ i, 0 });
+	while (q.size()) {
+		int u = q.front().first;
+		int c = q.front().second;
+		vis[u] = 1;
+		col[u] = c;
+		q.pop();
+		for (auto it : adj[u]) {
+			if (!vis[it])q.push({ it, c ^ 1 });
+			else if (col[it] == c) return 1;
+		}
+	}
+	return 0;
 }
 
 int main() {
-    cin >> t;
-    string no = "No suspicious bugs found!", yes = "Suspicious bugs found!";
-    for(int a=1; a<=t; a++){
-        init();
-        cin >> n >> m;
-        for(int i=0; i<m; i++){
-            cin >> u >> v;
-            adjList[u].push_back(v);
-            adjList[v].push_back(u);
-        }
-        int flag = 0;
-        for(int i=1; i<=n; i++){
-            if(vis[i] < 0) flag |= Bfs(i);
-        }
-        printf("Scenario #%d:\n%s\n", a, !flag ? no.c_str() : yes.c_str());
-    }
-    return 0;
+#ifdef LOCAL
+	freopen("input.txt", "r", stdin);
+#endif
+	scanf("%d", &T);
+	for (int t = 1; t <= T; t++) {
+		scanf("%d %d", &n, &m);
+		init();
+		while (m--) {
+			int u, v;
+			scanf("%d %d", &u, &v);
+			adj[u].push_back(v);
+			adj[v].push_back(u);
+		}
+		int f = 0;
+		for (int i = 1; i <= n; i++) if (!vis[i])
+			f += bfs(i);
+			//f += dfs(i, 0);
+		printf("Scenario #%d:\n", t);
+		if (f)puts("Suspicious bugs found!");
+		else puts("No suspicious bugs found!");
+	}
+	return 0;
 }
-
 
