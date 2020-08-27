@@ -2,7 +2,7 @@
 using namespace std;
 #define ll long long
 vector<vector<int>> v;
-vector<bool> e;
+vector<bool> e; 
 
 void insert(string& s) {
 	int cur = 0;
