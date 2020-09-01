@@ -10,13 +10,10 @@ int main() {
 	scanf("%d", &t);
 	while (t--) {
 		ll n; scanf("%lld", &n);
-		ll sum = 0, dis = 1, i = 4;
-		n = n * n;
-		while(n > 1) {
-			sum += dis * 2 * i;
-			n -= 2 * i;
-			i += 4;
-			dis++;
+		ll sum = 0, i = 0;
+		for (int dis = 0; dis <= n / 2; dis++) {
+			sum += dis * i;
+			i += 2 * ( 2 + 2 );
 		}
 		printf("%lld\n", sum);
 	}
