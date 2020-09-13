@@ -15,7 +15,7 @@ int main() {
 		for (int i = 0; i < n; i++)scanf("%d", ar + i);
 		sort(ar, ar + n);
 		int i = 0, l = n - 1;
-		ll ans = 1ll * ar[l] * ar[l - 1] * ar[l - 2] * ar[l - 3] * ar[l - 4];		// take 0 neg
+		ll ans = 1ll * ar[l] * ar[l - 1] * ar[l - 2] * ar[l - 3] * ar[l - 4];		// take 0 neg or all small neg
 		ans = max(ans, 1ll * ar[i] * ar[i + 1] * ar[i + 2] * ar[i + 3] * ar[l]);	// take 2 neg
 		ans = max(ans, 1ll * ar[i + 1] * ar[l] * ar[l - 1] * ar[l - 2] * ar[i]);	// take 4 neg
 
