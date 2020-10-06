@@ -5,6 +5,13 @@ using namespace std;
 
 int main() {
     int n, m; scanf("%d%d", &n, &m);
+    int time2 = 2 * n;
+    int time3 = 3 * n;
+    if(time3 > m)printf("%d\n", n - (m - time2));
+    else puts("0");
+
+    /*
+
     for (int i = 0; i <= n; i++) {
         for (int j = 0; j <= n; j++) {
             for (int a = 0; a <= n; a++) {
@@ -16,5 +23,7 @@ int main() {
             }
         }
     }
+
+    */
     return 0;
 }
