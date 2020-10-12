@@ -9,6 +9,6 @@ int main() {
         int l, r; scanf("%d%d", &l, &r);
         sum += (r - l + 1);
     }
-    printf("%lld\n", sum % k == 0 ? 0 : k - (sum + k) % k);
+    printf("%lld\n", sum % k == 0 ? 0 : k - sum % k);
     return 0;
 }
