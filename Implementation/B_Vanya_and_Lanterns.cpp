@@ -12,7 +12,6 @@ int main() {
         a = max(a, v[i] - v[i - 1]);
     }
     long double ans = max(a / 2.0L, 1.0L * b);
-    cout << fixed;
-    cout << setprecision(10) << ans << endl;
+    cout << fixed << setprecision(10) << ans << endl;
     return 0;
 }
