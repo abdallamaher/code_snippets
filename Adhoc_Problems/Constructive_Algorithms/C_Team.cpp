@@ -5,9 +5,9 @@ using namespace std;
 int main() {
     int z, o; cin >> z >> o;
     int ok = 0;
-    if (z >= o) ok = bool(z - o > 1);   // 010101
-    else ok = bool(o > z * 2 + 2);  // 110110 11
-    if (ok) {
+    if (z >= o) ok = bool(z - o > 1);   // 010101   // min
+    else ok = bool(o > z * 2 + 2);  // 110110 11    // max
+    if (ok) {   // if between it's ok
         puts("-1");
         return 0;
     }
