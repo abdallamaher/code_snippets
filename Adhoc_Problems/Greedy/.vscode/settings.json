@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.txt": "dockerfile",
+        "cstdlib": "cpp"
+    }
+}

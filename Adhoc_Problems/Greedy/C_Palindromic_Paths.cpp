@@ -19,7 +19,7 @@ inline void solve() {
     }
     int ans = 0;
     for (int i = 0, j = m + n - 2; i < j; j--, i++) {
-        ans += min(abs(ones[i] + ones[j]), abs(zeros[i] + zeros[j]));
+        ans += min(ones[i] + ones[j], zeros[i] + zeros[j]);
     }
     printf("%d\n", ans);
 }
