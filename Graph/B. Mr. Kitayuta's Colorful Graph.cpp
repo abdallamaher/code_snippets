@@ -1,39 +1,34 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-int n, m, q, st, en;
 vector<pair<int, int>> adj[105];
 int vis[105];
-int cnt;
 
-int dfs(int i, int c) {
-	if (i == en) return 1;
-	vis[i] = 1; int ret = 0;
-	for (auto it : adj[i])if (!vis[it.second] && c == it.first)
-		ret |= dfs(it.second, it.first);
-	return ret;
+int dfs(int a, int b, int c) {
+    if (a == b)return 1;
+    vis[a] = 1;
+    int ret = 0;
+    for (auto e : adj[a]) if (!vis[e.first] && c == e.second) {
+        ret |= dfs(e.first, b, e.second);
+    }
+    vis[a] = 0;
+    return ret;
 }
 
 int main() {
-	cin.sync_with_stdio(false);
-	cin.tie(0); cout.tie(0);
-	cin >> n >> m;
-	for (int i = 0; i < m; i++) {
-		int u, v, c; cin >> u >> v >> c;
-		adj[u].push_back({ c, v });
-		adj[v].push_back({ c, u });
-	}
-	cin >> q;
-	while (q--) {
-		cin >> st >> en;
-		cnt = 0;
-		for (int i = 1; i <= 100; i++) {
-			memset(vis, 0, sizeof vis);
-			cnt += dfs(st, i);
-		}
-		cout << cnt << '\n';
-	}
-	return 0;
+    int n, m; scanf("%d %d", &n, &m);
+    for (int i = 0; i < m; i++) {
+        int a, b, c; scanf("%d %d %d", &a, &b, &c);
+        adj[a].push_back({ b, c });
+        adj[b].push_back({ a, c });
+    }
+    int q;cin >> q;
+    while (q--) {
+        int a, b; scanf("%d %d", &a, &b);
+        int ans = 0;
+        for (int c = 1;c <= m; c++) {
+            ans += dfs(a, b, c);
+        }
+        printf("%d\n", ans);
+    }
 }
-
-
