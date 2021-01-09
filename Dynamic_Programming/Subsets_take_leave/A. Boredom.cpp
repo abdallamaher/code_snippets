@@ -22,8 +22,6 @@ ll solve(int i = 0) {
     return a;
 }
 int main() {
-    cin.sync_with_stdio(false);
-    cin.tie(0); cout.tie(0);
     cin >> n;
     for (int i = 0; i < n; i++) {
         int x; cin >> x;
@@ -44,15 +42,17 @@ int main() {
 table
 */
 void table() {
-    cin >> n;
-    for (int i = 0; i < n; i++) {
-        int x; cin >> x;
-        cnt[x]++;
-        mx = max(x, mx);
+    int n; cin >> n;
+    int N = 1e5 + 5;
+    int ar[N] = {};
+    for (int i = 0; i < n;i++) {
+        int x; scanf("%d", &x);
+        ar[x]++;
     }
-    dp[1] = cnt[1];
-    for (int i = 2; i <= mx; i++) {
-        dp[i] = max(dp[i - 1], 1ll * i * cnt[i] + dp[i - 2]);
+    ll dp[N] = {};
+    dp[1] = ar[1];
+    for (int i = 2;i < N; i++) {
+        dp[i] += max(dp[i - 1], (ll)i * ar[i] + dp[i - 2]);
     }
-    cout << dp[mx] << ' ';
+    cout << dp[N - 1] << endl;
 }
