@@ -3,6 +3,7 @@ using namespace std;
 #define ll long long
 
 inline bool check(int val, int k) {
+    //     smallest_possible     val=1+1+1+1 >= k(sections)        binaryOnes_in_val   <= k
     return val >= 0 && val >= k && __builtin_popcountll(val) <= k;
 }
 
