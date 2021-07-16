@@ -34,7 +34,7 @@ int main() {
     string s;
     for (ll i = 1005; i >= 2; i--) {
         ll t = (i - 1) * i / 2;
-        if (n >= t) {
+        while (n >= t) {
             for (int j = 0; j < i; j++)s += char('a' + c);
             n -= t;
             c++;
