@@ -1,24 +1,42 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-#define ll long long 
-#define ld long double 
+#define ll long long
 
-
-int main(){
-    int t; scanf("%d", &t);
-    while(t--){
-        int n; scanf("%d", &n);
-        vector<int> v(32);
-        for(int i=0; i<n; i++){
-            int x; scanf("%d", &x);
-            v[__builtin_clz(x)]++;
-        }
-        ll ans = 0;
-        for(int i=0; i<32; i++){
-            ans += 1ll * v[i] * (v[i] - 1) / 2;
-        }
-        printf("%lld\n", ans);
+inline void solve() {
+    int n; cin >> n;
+    vector<int> cnt(32);
+    for (int i = 0; i < n; i++) {
+        int x; cin >> x;
+        cnt[32 - __builtin_clz(x)]++;
     }
 
-    return 0;
+    ll ans = 0;
+    for (auto& val : cnt) {
+        ans += 1ll * val * (val - 1) / 2;
+    }
+
+    cout << ans << endl;
+}
+
+inline void go() {
+    int n; cin >> n;
+    vector<int> ar(n);
+    for (auto& it : ar)cin >> it;
+
+    ll ans = 0;
+    for (int bit = 0; bit < 32; ++bit) {
+        ll cnt = 0;
+        for (auto& it : ar) {
+            if (it >= (1 << bit) && it < (1 << (bit + 1)))  // check last 1 bit
+                cnt++;
+        }
+        ans += cnt * (cnt - 1) / 2;
+    }
+
+    cout << ans << endl;
+}
+
+int main() {
+    int t; cin >> t;
+    while (t--)solve();
 }
