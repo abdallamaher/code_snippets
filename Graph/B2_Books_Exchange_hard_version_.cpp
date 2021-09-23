@@ -3,35 +3,27 @@ using namespace std;
 #define ll long long
 
 inline void solve() {
-    int n;scanf("%d", &n);
-    vector<int> ar(n + 5), vis(n + 5);
+    int n; cin >> n;
+    vector<int> v(n + n), vis(n + n);
+    for (int i = 1; i <= n;i++) cin >> v[i];
     for (int i = 1; i <= n;i++) {
-        int x; scanf("%d", &x);
-        ar[i] = x;
-    }
-    for (int i = 1; i <= n; i++) {
-        if (!vis[i]) {
-            int j = i;
-            vector<int> st;
-            while (!vis[j]) {
-                st.push_back(j);
-                vis[j]++;
-                j = ar[j];
-            }
-            for (auto it : st) vis[it] = st.size();
-            st.clear();
+        if (vis[i])continue;
+        int cur = i;
+        vector<int> ar;
+        ar.push_back(i);
+        while (i != v[cur]) {
+            ar.push_back(v[cur]);
+            cur = v[cur];
         }
+        for (auto& it : ar)vis[it] = ar.size();
     }
-    for (int i = 1; i <= n; i++) {
-        printf("%d ", vis[ar[i]]);
-    }
-    puts("");
+    for (int i = 1; i <= n; i++)cout << vis[i] << ' ';
+    cout << endl;
 }
 
 int main() {
-    int t; cin >> t;
-    while (t--) {
-        solve();
-    }
-    return 0;
+    ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    int t = 1;
+    cin >> t;
+    while (t--)solve();
 }
