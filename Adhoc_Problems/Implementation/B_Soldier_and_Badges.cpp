@@ -2,6 +2,21 @@
 using namespace std;
 #define ll long long
 
+inline void solve() {
+    int n;cin >> n;
+    map<int, int> mp;
+    for (int i = 0;i < n; i++) {
+        int x; cin >> x;
+        mp[x]++;
+    }
+    int ans = 0;
+    for (auto& [key, val] : mp) {
+        ans += val * (val - 1) / 2;
+        for (int i = 1; i < val; i++)mp[key + i]++;
+    }
+    cout << ans << endl;
+}
+
 int main() {
     int n; scanf("%d", &n);
     vector<int> v(n);
