@@ -1,5 +1,5 @@
 recursion/backtracking  https://vjudge.net/problem/UVA-628      https://ideone.com/9996T8   
-bits                https://codeforces.com/contest/535/problem/B
+bits                    https://codeforces.com/contest/535/problem/B
 number theroy   
     divisors        https://codeforces.com/problemset/problem/1469/D
     prime           https://codeforces.com/problemset/problem/230/B
@@ -8,7 +8,7 @@ number theroy
     gcd             https://codeforces.com/problemset/problem/1458/A      
     lcm             https://codeforces.com/problemset/problem/235/A
     modular         https://codeforces.com/problemset/problem/450/B
-combinatorics       https://codeforces.com/problemset/problem/1582/B 
+    combinatorics   https://codeforces.com/problemset/problem/1582/B 
 dp  
     0/1 take leave  https://atcoder.jp/contests/dp/tasks/dp_d?lang=en
     ranges          https://codeforces.com/problemset/problem/467/C
@@ -43,12 +43,14 @@ graph
     0-1 bfs             https://www.spoj.com/problems/KATHTHI/en/
     dijkstra            https://www.spoj.com/problems/HIGHWAYS/
     max flow            https://vjudge.net/problem/UVA-259 
-    delimanford         https://vjudge.net/problem/UVA-515
+    bellman_ford         https://vjudge.net/problem/UVA-515
     floyd               https://vjudge.net/problem/UVA-280
 string 
     trie                https://www.spoj.com/problems/PHONELST/en/
     kmp                 https://www.spoj.com/problems/NHAY/en/
     suffix array        https://www.spoj.com/problems/SUBST1/en/
     z algo              https://www.spoj.com/problems/QUERYSTR/en/
-segment tree            https://www.spoj.com/problems/RMQSQ/
-sparse table            https://www.spoj.com/problems/RMQSQ/
+Advanced DataStructure
+    segment tree        https://www.spoj.com/problems/RMQSQ/
+    sparse table        https://www.spoj.com/problems/RMQSQ/
+    binary search tree  https://leetcode.com/problems/binary-tree-right-side-view/
