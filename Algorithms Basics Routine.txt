@@ -53,4 +53,9 @@ string
 Advanced DataStructure
     segment tree        https://www.spoj.com/problems/RMQSQ/
     sparse table        https://www.spoj.com/problems/RMQSQ/
-    binary search tree  https://leetcode.com/problems/binary-tree-right-side-view/
+    binary tree         https://leetcode.com/problems/binary-tree-right-side-view/
+    binary search tree  https://leetcode.com/problems/validate-binary-search-tree/
+    stack               https://leetcode.com/problems/next-greater-element-i/
+    queue               https://www.youtube.com/watch?v=71kEvXsEKYQ
+    Heap                https://www.youtube.com/watch?v=jWq7nzfgQ9A
+    LinkedList          https://leetcode.com/problems/reverse-linked-list/
