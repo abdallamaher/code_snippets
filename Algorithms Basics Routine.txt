@@ -1,4 +1,4 @@
-recursion/backtracking  https://vjudge.net/problem/UVA-628      https://ideone.com/9996T8   
+recursion/backtracking  https://vjudge.net/problem/UVA-628      https://vjudge.net/solution/34176102   
 bits                    https://codeforces.com/contest/535/problem/B 
 dp  
     subsets(010101)     https://atcoder.jp/contests/dp/tasks/dp_d?lang=en
