@@ -1,8 +1,8 @@
-recursion/backtracking  https://vjudge.net/problem/UVA-628      https://ideone.com/9996T8   
+recursion/backtracking  https://vjudge.net/problem/UVA-628      https://vjudge.net/solution/34176102   
 bits                    https://codeforces.com/contest/535/problem/B 
 dp  
     subsets(010101)     https://atcoder.jp/contests/dp/tasks/dp_d?lang=en
-    subsets(040450)     https://vjudge.net/problem/UVA-357      https://ideone.com/PcQ4QC
+    subsets(040450)     https://vjudge.net/problem/UVA-357      https://vjudge.net/solution/34176008
     Ranges_Consecutive  https://codeforces.com/problemset/problem/467/C
                         https://vjudge.net/problem/UVALive-2675
     Ranges_Nested       https://vjudge.net/problem/UVA-10003 
