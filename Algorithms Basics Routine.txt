@@ -1,23 +1,14 @@
 recursion/backtracking  https://vjudge.net/problem/UVA-628      https://ideone.com/9996T8   
-bits                    https://codeforces.com/contest/535/problem/B
-number theroy   
-    divisors        https://codeforces.com/problemset/problem/1469/D
-    prime           https://codeforces.com/problemset/problem/230/B
-    prime divisors  https://codeforces.com/problemset/problem/150/A
-    fast power      https://codeforces.com/problemset/problem/1228/C
-    gcd             https://codeforces.com/problemset/problem/1458/A      
-    lcm             https://codeforces.com/problemset/problem/235/A
-    modular         https://codeforces.com/problemset/problem/450/B
-    combinatorics   https://codeforces.com/problemset/problem/1582/B 
+bits                    https://codeforces.com/contest/535/problem/B 
 dp  
-    0/1 take leave  https://atcoder.jp/contests/dp/tasks/dp_d?lang=en
-    ranges          https://codeforces.com/problemset/problem/467/C
+    0/1 take leave      https://atcoder.jp/contests/dp/tasks/dp_d?lang=en
+    ranges              https://codeforces.com/problemset/problem/467/C
     nested
-    table           https://atcoder.jp/contests/dp/tasks/dp_e
+    table               https://atcoder.jp/contests/dp/tasks/dp_e
     building solution   https://atcoder.jp/contests/dp/tasks/dp_f?lang=en
-    bitmasks        https://atcoder.jp/contests/dp/tasks/dp_o?lang=en
-    digit           https://atcoder.jp/contests/dp/tasks/dp_s?lang=en
-    tree            https://atcoder.jp/contests/dp/tasks/dp_g
+    bit_masks           https://atcoder.jp/contests/dp/tasks/dp_o?lang=en
+    digit               https://atcoder.jp/contests/dp/tasks/dp_s?lang=en
+    tree                https://atcoder.jp/contests/dp/tasks/dp_g
 BS  
     000111              https://codeforces.com/problemset/problem/1476/B
     111000              https://codeforces.com/problemset/problem/371/C
@@ -29,10 +20,10 @@ graph
     bfs                 https://www.spoj.com/problems/PPATH/en/
     connected component https://codeforces.com/problemset/problem/217/A
     cycle               https://codeforces.com/problemset/problem/510/B
-    diamiter            https://www.spoj.com/problems/PT07Z/
+    diameter            https://www.spoj.com/problems/PT07Z/
     flood fill          https://codeforces.com/problemset/problem/242/C
     topological sort    https://www.spoj.com/problems/TOPOSORT/
-    birpartits graph    https://www.spoj.com/problems/BUGLIFE/
+    bipartite graph     https://www.spoj.com/problems/BUGLIFE/
     center              
     bridges             https://vjudge.net/problem/UVA-315
     articulation points https://vjudge.net/problem/UVA-796
@@ -43,7 +34,7 @@ graph
     0-1 bfs             https://www.spoj.com/problems/KATHTHI/en/
     dijkstra            https://www.spoj.com/problems/HIGHWAYS/
     max flow            https://vjudge.net/problem/UVA-259 
-    bellman_ford         https://vjudge.net/problem/UVA-515
+    bellman_ford        https://vjudge.net/problem/UVA-515
     floyd               https://vjudge.net/problem/UVA-280
 string 
     trie                https://www.spoj.com/problems/PHONELST/en/
@@ -59,3 +50,15 @@ Advanced DataStructure
     queue               https://www.youtube.com/watch?v=71kEvXsEKYQ
     Heap                https://www.youtube.com/watch?v=jWq7nzfgQ9A
     LinkedList          https://leetcode.com/problems/reverse-linked-list/
+sorting 
+    quick sort          https://www.youtube.com/watch?v=eA3PMKlRZs8
+    merge sort          https://www.youtube.com/watch?v=uOjJPtVA24k
+number theory   
+    divisors        https://codeforces.com/problemset/problem/1469/D
+    prime           https://codeforces.com/problemset/problem/230/B
+    prime divisors  https://codeforces.com/problemset/problem/150/A
+    fast power      https://codeforces.com/problemset/problem/1228/C
+    gcd             https://codeforces.com/problemset/problem/1458/A      
+    lcm             https://codeforces.com/problemset/problem/235/A
+    modular         https://codeforces.com/problemset/problem/450/B
+    combinatorics   https://codeforces.com/problemset/problem/1582/B
