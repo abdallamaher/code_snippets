@@ -4,6 +4,7 @@ dp
     subsets(010101)     https://atcoder.jp/contests/dp/tasks/dp_d?lang=en
     subsets(040450)     https://vjudge.net/problem/UVA-357      https://ideone.com/PcQ4QC
     Ranges_Consecutive  https://codeforces.com/problemset/problem/467/C
+                        https://vjudge.net/problem/UVALive-2675
     Ranges_Nested       https://vjudge.net/problem/UVA-10003 
     Ranges_General      https://vjudge.net/problem/UVA-10739 
     table               https://atcoder.jp/contests/dp/tasks/dp_e
