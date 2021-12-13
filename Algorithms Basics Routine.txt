@@ -29,7 +29,7 @@ graph
     flood fill          https://codeforces.com/problemset/problem/242/C
     topological sort    https://www.spoj.com/problems/TOPOSORT/
     bipartite graph     https://www.spoj.com/problems/BUGLIFE/
-    center              
+    centroid            https://cses.fi/problemset/task/2079
     bridges             https://vjudge.net/problem/UVA-315
     articulation points https://vjudge.net/problem/UVA-796
     dsu                 https://codeforces.com/problemset/problem/766/D
