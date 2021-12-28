@@ -36,16 +36,16 @@ graph
     articulation points https://vjudge.net/problem/UVA-796
     dsu                 https://vjudge.net/problem/UVA-11503
     mst                 https://www.hackerearth.com/practice/algorithms/graphs/minimum-spanning-tree/practice-problems/algorithm/minimum-spanning-tree-5/
+    0-1 bfs             https://www.spoj.com/problems/KATHTHI/en/
+    dijkstra            https://www.spoj.com/problems/HIGHWAYS/
+    floyd               https://vjudge.net/problem/UVA-280
+    bellman_ford        https://vjudge.net/problem/UVA-515
+    distance between nodes https://www.youtube.com/watch?v=ZPa1Dwr9vAg&list=PL2q4fbVm1Ik64I3VqbVGRfl_OgYzvzt9m&index=6    
+                        https://cses.fi/problemset/task/1135
+    max flow            https://vjudge.net/problem/UVA-259 
     lca                 https://leetcode.com/problems/kth-ancestor-of-a-tree-node/
                         https://www.spoj.com/problems/LCASQ/
                         https://www.spoj.com/problems/LCA/
-    distance between nodes https://www.youtube.com/watch?v=ZPa1Dwr9vAg&list=PL2q4fbVm1Ik64I3VqbVGRfl_OgYzvzt9m&index=6    
-                        https://cses.fi/problemset/task/1135
-    0-1 bfs             https://www.spoj.com/problems/KATHTHI/en/
-    dijkstra            https://www.spoj.com/problems/HIGHWAYS/
-    max flow            https://vjudge.net/problem/UVA-259 
-    bellman_ford        https://vjudge.net/problem/UVA-515
-    floyd               https://vjudge.net/problem/UVA-280
 string 
     trie                https://www.spoj.com/problems/PHONELST/en/
     kmp                 https://www.spoj.com/problems/NHAY/en/
