@@ -1,18 +1,20 @@
 recursion/backtracking  https://vjudge.net/problem/UVA-628      https://vjudge.net/solution/34176102   
 bits                    https://codeforces.com/contest/535/problem/B 
 dp  
-    subsets(010101)     https://atcoder.jp/contests/dp/tasks/dp_d?lang=en
+    subsets(010101)     https://atcoder.jp/contests/dp/tasks/dp_d
     subsets(040450)     https://vjudge.net/problem/UVA-357      https://vjudge.net/solution/34176008
     Ranges_Consecutive  https://codeforces.com/problemset/problem/467/C
                         https://vjudge.net/problem/UVALive-2675
     Ranges_Nested       https://vjudge.net/problem/UVA-10003    https://vjudge.net/solution/34348435
                         https://vjudge.net/problem/TopCoder-11781 
     Ranges_General      https://vjudge.net/problem/UVA-10739 
-    table               https://atcoder.jp/contests/dp/tasks/dp_e
-                        https://www.spoj.com/problems/LKS/
-    building_solution   https://atcoder.jp/contests/dp/tasks/dp_f?lang=en
-    bit_masks           https://atcoder.jp/contests/dp/tasks/dp_o?lang=en
-    digit               https://atcoder.jp/contests/dp/tasks/dp_s?lang=en
+    table               https://atcoder.jp/contests/dp/tasks/dp_d   [n][mx_weight]
+                        https://www.spoj.com/problems/LKS/          [2][mx_weight]
+                        https://atcoder.jp/contests/dp/tasks/dp_e   [n][mx_val]
+                        https://vjudge.net/problem/UVA-147          [n][mx_coin]
+    building_solution   https://atcoder.jp/contests/dp/tasks/dp_f
+    bit_masks           https://atcoder.jp/contests/dp/tasks/dp_o
+    digit               https://atcoder.jp/contests/dp/tasks/dp_s
     tree                https://atcoder.jp/contests/dp/tasks/dp_g
 BS  
     000111              https://codeforces.com/problemset/problem/1476/B
