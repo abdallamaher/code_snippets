@@ -1,5 +1,11 @@
-recursion/backtracking  https://vjudge.net/problem/UVA-628      https://vjudge.net/solution/34176102   
-bits                    https://codeforces.com/contest/535/problem/B 
+Search
+    recursionBacktrack  https://vjudge.net/problem/UVA-628      https://vjudge.net/solution/34176102   
+    bits                https://codeforces.com/contest/535/problem/B 
+    BS 000111           https://codeforces.com/problemset/problem/1476/B
+    BS 111000           https://codeforces.com/problemset/problem/371/C
+    upper lower bound   https://www.spoj.com/problems/AGGRCOW/
+    two point           
+    ternary             https://vjudge.net/problem/UVA-11243
 dp  
     subsets(010101)     https://atcoder.jp/contests/dp/tasks/dp_d
     subsets(040450)     https://vjudge.net/problem/UVA-357      https://vjudge.net/solution/34176008
@@ -16,12 +22,6 @@ dp
     bit_masks           https://atcoder.jp/contests/dp/tasks/dp_o
     digit               https://atcoder.jp/contests/dp/tasks/dp_s
     tree                https://atcoder.jp/contests/dp/tasks/dp_g
-BS  
-    000111              https://codeforces.com/problemset/problem/1476/B
-    111000              https://codeforces.com/problemset/problem/371/C
-    upper lower bound   https://www.spoj.com/problems/AGGRCOW/
-    two point           
-    ternary
 graph  
     dfs                 https://codeforces.com/problemset/problem/445/B
     bfs                 https://www.spoj.com/problems/PPATH/en/
@@ -31,21 +31,22 @@ graph
     flood fill          https://codeforces.com/problemset/problem/242/C
     topological sort    https://www.spoj.com/problems/TOPOSORT/
     bipartite graph     https://www.spoj.com/problems/BUGLIFE/
-    centroid            https://cses.fi/problemset/task/2079
-    bridges             https://vjudge.net/problem/UVA-315
-    articulation points https://vjudge.net/problem/UVA-796
     dsu                 https://vjudge.net/problem/UVA-11503
-    mst                 https://www.hackerearth.com/practice/algorithms/graphs/minimum-spanning-tree/practice-problems/algorithm/minimum-spanning-tree-5/
+    mst                 https://vjudge.net/problem/UVA-10147
     0-1 bfs             https://www.spoj.com/problems/KATHTHI/en/
     dijkstra            https://www.spoj.com/problems/HIGHWAYS/
-    floyd               https://vjudge.net/problem/UVA-280
     bellman_ford        https://vjudge.net/problem/UVA-515
-    distance between nodes https://www.youtube.com/watch?v=ZPa1Dwr9vAg&list=PL2q4fbVm1Ik64I3VqbVGRfl_OgYzvzt9m&index=6    
-                        https://cses.fi/problemset/task/1135
-    max flow            https://vjudge.net/problem/UVA-259 
-    lca                 https://leetcode.com/problems/kth-ancestor-of-a-tree-node/
+    floyd               https://vjudge.net/problem/UVA-280
+    scc(Tarjan)         https://vjudge.net/problem/UVA-11504
+    bridges             https://vjudge.net/problem/UVA-315
+    articulation points https://vjudge.net/problem/UVA-796
+    max flow            https://vjudge.net/problem/UVA-259
+    lca                 https://www.spoj.com/problems/LCA/
+    Binary lifting      https://leetcode.com/problems/kth-ancestor-of-a-tree-node/
                         https://www.spoj.com/problems/LCASQ/
-                        https://www.spoj.com/problems/LCA/
+    2node Dist o(log)   https://cses.fi/problemset/task/1135
+    centroid            https://cses.fi/problemset/task/2079
+    Decomposition       https://www.spoj.com/problems/QTREE/
 string 
     trie                https://www.spoj.com/problems/PHONELST/en/
     kmp                 https://www.spoj.com/problems/NHAY/en/
