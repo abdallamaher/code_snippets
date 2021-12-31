@@ -32,7 +32,7 @@ graph
     topological sort    https://www.spoj.com/problems/TOPOSORT/
     bipartite graph     https://www.spoj.com/problems/BUGLIFE/
     dsu                 https://vjudge.net/problem/UVA-11503
-    mst                 https://vjudge.net/problem/UVA-10147
+    mst                 https://vjudge.net/problem/UVA-10034
     0-1 bfs             https://www.spoj.com/problems/KATHTHI/en/
     dijkstra            https://www.spoj.com/problems/HIGHWAYS/
     bellman_ford        https://vjudge.net/problem/UVA-515
