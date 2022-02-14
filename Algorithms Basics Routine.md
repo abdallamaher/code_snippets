@@ -1,4 +1,5 @@
-## Search
+## MyList
+- Search
     recursionBacktrack  https://vjudge.net/problem/UVA-628      https://vjudge.net/solution/34176102   
     bits                https://codeforces.com/contest/535/problem/B 
     BS 000111           https://codeforces.com/problemset/problem/1476/B
@@ -6,7 +7,7 @@
     upper lower bound   https://www.spoj.com/problems/AGGRCOW/
     two point           
     ternary             https://vjudge.net/problem/UVA-11243
-## dp  
+- dp  
     subsets(010101)     https://atcoder.jp/contests/dp/tasks/dp_d
     subsets(040450)     https://vjudge.net/problem/UVA-357      https://vjudge.net/solution/34176008
     Ranges_Consecutive  https://codeforces.com/problemset/problem/467/C
@@ -22,7 +23,7 @@
     bit_masks           https://atcoder.jp/contests/dp/tasks/dp_o
     digit               https://atcoder.jp/contests/dp/tasks/dp_s
     tree                https://atcoder.jp/contests/dp/tasks/dp_g
-## graph  
+- graph  
     dfs                 https://codeforces.com/problemset/problem/445/B
     bfs                 https://www.spoj.com/problems/PPATH/en/
     connected component https://codeforces.com/problemset/problem/217/A
@@ -47,12 +48,12 @@
     2node Dist o(log)   https://cses.fi/problemset/task/1135
     centroid            https://cses.fi/problemset/task/2079
     Decomposition       https://www.spoj.com/problems/QTREE/
-## string 
+- string 
     trie                https://www.spoj.com/problems/PHONELST/en/
     kmp                 https://www.spoj.com/problems/NHAY/en/
     suffix array        https://www.spoj.com/problems/SUBST1/en/
     z algo              https://www.spoj.com/problems/QUERYSTR/en/
-## Advanced DataStructure
+- Advanced DataStructure
     segment tree        https://www.spoj.com/problems/RMQSQ/
     sparse table        https://www.spoj.com/problems/RMQSQ/
     binary search tree  https://leetcode.com/problems/validate-binary-search-tree/
@@ -60,10 +61,10 @@
     queue               https://www.youtube.com/watch?v=71kEvXsEKYQ
     Heap                https://www.youtube.com/watch?v=jWq7nzfgQ9A
     LinkedList          https://leetcode.com/problems/reverse-linked-list/
-## sorting 
+- sorting 
     quick sort          https://www.youtube.com/watch?v=eA3PMKlRZs8
     merge sort          https://www.youtube.com/watch?v=uOjJPtVA24k
-## number theory   
+- number theory   
     divisors            https://codeforces.com/problemset/problem/1469/D
     prime               https://codeforces.com/problemset/problem/230/B
     prime divisors      https://codeforces.com/problemset/problem/150/A
@@ -82,7 +83,7 @@
 
 
 ## leetcode    
-## Arrays
+- Arrays
     EASY
     https://leetcode.com/problems/two-sum/
     https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
@@ -132,7 +133,7 @@
     https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
     https://leetcode.com/problems/max-value-of-equation/
 
-## STACK
+- STACK
     EASY
     https://leetcode.com/problems/min-stack/
     https://leetcode.com/problems/next-greater-element-i/
@@ -150,7 +151,7 @@
     https://leetcode.com/problems/sum-of-subarray-minimums/
     https://leetcode.com/problems/evaluate-reverse-polish-notation/
 
-## LINKED LIST
+- LINKED LIST
     EASY
     https://leetcode.com/problems/delete-node-in-a-linked-list/
     https://leetcode.com/problems/middle-of-the-linked-list/
@@ -184,7 +185,7 @@
     https://leetcode.com/problems/merge-k-sorted-lists/
     https://leetcode.com/problems/reverse-nodes-in-k-group/
 
-## HEAP
+- HEAP
     MEDIUM
     https://leetcode.com/problems/k-closest-points-to-origin/
     https://leetcode.com/problems/kth-largest-element-in-an-array/
@@ -206,14 +207,14 @@
     https://leetcode.com/problems/minimum-cost-to-hire-k-workers/
     https://leetcode.com/problems/k-th-smallest-prime-fraction/
 
-## SLIDING WINDOW
+- SLIDING WINDOW
     MEDIUM/HARD
     https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/
     https://leetcode.com/problems/max-consecutive-ones-iii/
     https://leetcode.com/problems/grumpy-bookstore-owner/
     https://leetcode.com/problems/sliding-window-median/
 
-## HASH TABLE 
+- HASH TABLE 
     EASY
     https://leetcode.com/problems/verifying-an-alien-dictionary/
     https://leetcode.com/problems/design-hashmap/
@@ -222,7 +223,7 @@
     https://leetcode.com/problems/top-k-frequent-elements/
     https://leetcode.com/problems/design-twitter/
 
-## DESIGN
+- DESIGN
     MEDIUM / HARD
     https://leetcode.com/problems/lru-cache/
     https://leetcode.com/problems/find-median-from-data-stream/
@@ -232,10 +233,10 @@
     https://leetcode.com/problems/all-oone-data-structure/
     https://leetcode.com/problems/design-browser-history/
 
-## SEGMENT TREE
+- SEGMENT TREE
     https://leetcode.com/articles/a-recursive-approach-to-segment-trees-range-sum-queries-lazy-propagation/
 
-## DYNAMIC PROGRAMING
+- DYNAMIC PROGRAMING
     EASY
     https://leetcode.com/problems/maximum-subarray/
     https://leetcode.com/problems/climbing-stairs
@@ -277,7 +278,7 @@
     https://leetcode.com/problems/count-different-palindromic-subsequences/
     https://leetcode.com/problems/minimum-cost-to-cut-a-stick/
 
-## STRINGS
+- STRINGS
     EASY
     https://leetcode.com/problems/add-strings/
     https://leetcode.com/problems/longest-common-prefix/
@@ -309,7 +310,7 @@
     https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/
     https://leetcode.com/problems/substring-with-concatenation-of-all-words/
 
-## MATHS
+- MATHS
     EASY
     https://leetcode.com/problems/reverse-integer/
     https://leetcode.com/problems/add-binary/
@@ -336,7 +337,7 @@
     https://leetcode.com/problems/permutation-sequence/
     https://leetcode.com/problems/number-of-digit-one/
 
-## GREEDY 
+- GREEDY 
     EASY 
     THAT WOULD BE TOO EASY FOR YOU , LETS DO MEDIUM
 
@@ -355,7 +356,7 @@
     https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/
     https://leetcode.com/problems/create-maximum-number/
 
-## DFS
+- DFS
     MEDIUM
     https://leetcode.com/problems/letter-combinations-of-a-phone-number/
     https://leetcode.com/problems/course-schedule-ii/
@@ -377,7 +378,7 @@
     https://leetcode.com/problems/24-game/
     https://leetcode.com/problems/remove-boxes/
 
-## BFS
+- BFS
     MEDIUM
     https://leetcode.com/problems/number-of-islands/
     https://leetcode.com/problems/rotting-oranges/
@@ -391,7 +392,7 @@
     https://leetcode.com/problems/cut-off-trees-for-golf-event/
     https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/
 
-## GRAPH
+- GRAPH
     EASY
     https://leetcode.com/problems/employee-importance/
     https://leetcode.com/problems/find-the-town-judge/
@@ -412,7 +413,7 @@
     https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/
     https://leetcode.com/problems/time-needed-to-inform-all-employees/
 
-## TREE
+- TREE
     EASY
     https://leetcode.com/problems/diameter-of-binary-tree/
     https://leetcode.com/problems/invert-binary-tree/
@@ -460,7 +461,7 @@
     https://leetcode.com/problems/number-of-ways-to-reconstruct-a-tree/
     https://leetcode.com/problems/redundant-connection-ii/
 
-## TWO POINTER
+- TWO POINTER
     MEDIUM / HARD 
     https://leetcode.com/problems/partition-labels/
     https://leetcode.com/problems/sort-colors/
@@ -468,7 +469,7 @@
     https://leetcode.com/problems/maximum-number-of-visible-points/
     https://leetcode.com/problems/subarrays-with-k-different-integers/
 
-## BACKTRACKING 
+- BACKTRACKING 
     MEDIUM
     https://leetcode.com/problems/palindrome-partitioning/
     https://leetcode.com/problems/combination-sum-ii/
@@ -483,9 +484,5 @@
     https://leetcode.com/problems/n-queens/
     https://leetcode.com/problems/unique-paths-iii/
 
-## BIT MANIPULATION
+- BIT MANIPULATION
     https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary%3A-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently
-
-
-
-
