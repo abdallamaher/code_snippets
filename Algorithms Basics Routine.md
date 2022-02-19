@@ -2,7 +2,9 @@
 - Search
     * recursionBacktrack  https://vjudge.net/problem/UVA-628   
     * bits                https://codeforces.com/contest/535/problem/B 
-    * BS 000111           https://codeforces.com/problemset/problem/1476/B
+    * BS 000111           
+                          https://codeforces.com/problemset/problem/1476/B</br>
+                          https://leetcode.com/problems/search-in-rotated-sorted-array/</br>
     * BS 111000           https://codeforces.com/problemset/problem/371/C
     * upper lower bound   https://www.spoj.com/problems/AGGRCOW/
     * two point           
