@@ -17,7 +17,7 @@ Take_Input() {
 Call_Github() {
     git add .
     git status
-    git commit -m '876._Middle_of_the_Linked_List.cpp'
+    git commit -m $varname
     git push
 }
 
