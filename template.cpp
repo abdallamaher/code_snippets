@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 #ifdef DEBUG
-#include "C:\debug.h"
+#include "./../competitive_programming/debug.h"
 #else
 #define debug(...) 42
 #endif
