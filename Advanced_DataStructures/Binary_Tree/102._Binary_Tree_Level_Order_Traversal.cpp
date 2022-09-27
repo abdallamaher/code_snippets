@@ -1,3 +1,4 @@
+// Runtime: 6 ms, faster than 61.97% of C++
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -14,15 +15,19 @@ public:
     vector<vector<int>> levelOrder(TreeNode* root) {
         if(root == NULL) return {};
         
-        map<int, vector<int>> levels;
+        vector<vector<int>> levels;
+        
         queue<pair<TreeNode*, int>> q;
         q.push({root, 0});
+        
         while(q.size()) {
             auto t = q.front();
             TreeNode* curr = t.first;
             int level = t.second;
             q.pop();
-            //cerr << level << ' ' << curr->val << endl;
+            
+            while(level >= (int)levels.size())
+                levels.push_back(vector<int>());
             levels[level].push_back(curr->val);
             
             if(curr->left != NULL)
@@ -30,13 +35,7 @@ public:
             if(curr->right != NULL)
                 q.push({curr->right, level + 1});
         }
-        //cerr << "here" << endl;
-        vector<vector<int>> ans((int)levels.size());
-        for(auto& it: levels) {
-            for(auto& i: it.second) {
-                ans[it.first].push_back(i);
-            }
-        }
-        return ans;
+    
+        return levels;
     }
 };
