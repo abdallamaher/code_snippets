@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.txt": "txt",
+        "vector": "cpp",
+        "iosfwd": "cpp",
+        "queue": "cpp"
+    }
+}
